@@ -2,9 +2,12 @@
 
 #
 #
-# babash
-# ============
-# Lightweight shell script helper/class
+#                                           babash
+#                                     ============
+#              A lightweight shell script "module"
+#                  With some built-in conveniences
+#                      for writing pure shell apps
+#
 #
 #
 
@@ -12,5 +15,5 @@
 # which could have benefits but also restricts where
 # this can be imported.
 
-source $PWD/src/core/core.sh
-source $PWD/src/output/text.sh
+source $PWD/src/core/index.sh
+source $PWD/src/output/index.sh
