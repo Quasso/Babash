@@ -1,4 +1,3 @@
 #!/bin/sh
 
-export DEBUG_LOGS_ENABLED=false
 export DEFAULT_VAL_PADDING_LINES=10
