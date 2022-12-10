@@ -24,3 +24,5 @@ function bb_padded_output() {
 function bb_sm_pad() {
 
 }
+
+bb_output_file_loaded_submod "output/_padding"

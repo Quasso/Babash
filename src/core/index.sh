@@ -25,9 +25,6 @@ source $PWD/src/core/config/_global-defaults.sh
 #
 
 source $PWD/src/core/dev/_debug.sh
-
-bb_debug_echo "Core index.sh file loaded."
-
 source $PWD/src/core/dev/_validation.sh
 
 #

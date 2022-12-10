@@ -11,3 +11,5 @@ function bb_check_is_var_set() {
         bb_debug_echo "var is set to '$VAR'"
     fi
 }
+
+bb_output_file_loaded_submod "dev/_validation"
