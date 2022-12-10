@@ -15,13 +15,18 @@ function bb_style_and_colour_combine() {
 
 function bb_success() {
     TEXT=$1
-    bb_style_and_colour_combine $TEXT 2
+    bb_style_and_colour_combine $TEXT 2 # green
+}
+
+function bb_info() {
+    TEXT=$1
+    bb_style_and_colour_combine $TEXT 4 # blue
 }
 
 function bb_error() {
     TEXT=$1
-    bb_style_and_colour_combine $TEXT 1
+    bb_style_and_colour_combine $TEXT 1 # red
 }
 
-bb_success "test success!!!!!!!!!!"
-bb_error "test success!!!!!!!!!!"
+# bb_success "test success!!!!!!!!!!"
+# bb_error "test success!!!!!!!!!!"

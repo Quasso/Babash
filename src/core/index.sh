@@ -6,6 +6,8 @@
 #
 #
 
+source $PWD/src/core/ascii/_logo.sh
+
 # Main config file, can be edited to change functionality
 source $PWD/src/core/config/_config.sh
 

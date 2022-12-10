@@ -28,7 +28,7 @@ function bb_output_file_loaded() {
 
     if [[ $INSTALLATION_NARRATOR == true ]]; then
         if [[ $SUBMOD == true ]]; then
-            bb_success "[babash] The submodule '_${NAME}' loaded successfully."
+            bb_info "[babash] The submodule '_${NAME}' loaded successfully."
         else
             bb_success "[babash] The module '${NAME}' loaded successfully."
         fi
