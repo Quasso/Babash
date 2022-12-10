@@ -7,16 +7,4 @@ function bb_debug_echo() {
     fi
 }
 
-function bb_output_file_loaded() {
-    NAME=$1
-
-    echo "[babash] Congrats! ${NAME} loaded successfully."
-}
-
-function bb_output_file_loaded_submod() {
-    NAME=$1
-
-    echo "[babash] Congrats! The submodule '${NAME}' loaded successfully."
-}
-
-bb_output_file_loaded_submod "dev/_debug"
+bb_output_file_loaded "debug" $INSTALLATION_NARRATOR

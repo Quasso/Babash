@@ -12,4 +12,4 @@ function bb_check_is_var_set() {
     fi
 }
 
-bb_output_file_loaded_submod "dev/_validation"
+bb_output_file_loaded "validation" $INSTALLATION_NARRATOR
