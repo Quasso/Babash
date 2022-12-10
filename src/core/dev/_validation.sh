@@ -12,4 +12,16 @@ function bb_check_is_var_set() {
     fi
 }
 
+function bb_check_if_dir_exists() {
+    DIR=$1
+    bb_debug_echo "Check dir exists $DIR"
+    if [[ -d "$DIR" ]]; then
+        bb_debug_echo "DIR EXISTS! $DIR"
+        ls $DIR
+    else
+        bb_debug_echo "DIR DOES NOT EXIST: $DIR"
+        mkdir $DIR
+    fi
+}
+
 bb_output_file_loaded "validation" $INSTALLATION_NARRATOR

@@ -6,7 +6,7 @@ function bb_border() {
     WIDTH=$1
 
     echo
-    echo $DEFAULT_BORDER
+    echo $BB_COL_WHITE$DEFAULT_BORDER$BB_RESET
     echo
 }
 
