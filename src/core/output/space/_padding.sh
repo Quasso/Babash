@@ -21,8 +21,4 @@ function bb_padded_output() {
     bb_multiline_echo $PADDING_LINES
 }
 
-function bb_sm_pad() {
-
-}
-
 bb_output_file_loaded "padding" $INSTALLATION_NARRATOR
