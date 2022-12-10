@@ -1,10 +1,22 @@
 #!/bin/sh
 
+#
+#
+# CONFIG: before everything else!
+#
+#
+
 # Main config file, can be edited to change functionality
-source $PWD/src/core/_config.sh
+source $PWD/src/core/config/_config.sh
 
 # THIS MUST BE SOURCED FIRST, EACH SUBSEQUENT SOURCE MAY USE IT!
-source $PWD/src/core/_global-defaults.sh
+source $PWD/src/core/config/_global-defaults.sh
+
+#
+#
+# END CONFIG
+#
+#
 
 source $PWD/src/core/_debug.sh
 
