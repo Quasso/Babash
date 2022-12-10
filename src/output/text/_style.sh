@@ -1,5 +1,15 @@
 #!/bin/sh
 
+DEFAULT_BORDER="=========================" # 25 =
+
+function bb_border() {
+    WIDTH=$1
+
+    echo
+    echo $DEFAULT_BORDER
+    echo
+}
+
 # tput bold    # Select bold mode
 # tput dim     # Select dim (half-bright) mode
 # tput smul    # Enable underline mode
@@ -20,4 +30,4 @@ function style_text() {
     fi
 }
 
-bb_output_file_loaded "$(style_text 'bold' 'style')" $INSTALLATION_NARRATOR
+bb_output_file_loaded "style" $INSTALLATION_NARRATOR

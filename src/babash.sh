@@ -18,6 +18,7 @@ INSTALLATION_NARRATOR=true
 # this can be imported.
 
 source $PWD/src/core/index.sh
+bb_output_file_loaded "Core"
 
 source $PWD/src/output/index.sh
 bb_output_file_loaded "Output"
@@ -34,8 +35,6 @@ function bb_output_file_loaded() {
         fi
     fi
 }
-
-bb_output_file_loaded "Core"
 
 source $PWD/src/extensions/index.sh
 bb_output_file_loaded "Extensions"

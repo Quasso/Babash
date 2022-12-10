@@ -15,7 +15,10 @@ function bb_style_and_colour_combine() {
 
 function bb_success() {
     TEXT=$1
+
+    # bb_multiline_echo 1
     bb_style_and_colour_combine $TEXT 2 # green
+    bb_border
 }
 
 function bb_info() {
