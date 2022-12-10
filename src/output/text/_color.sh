@@ -41,8 +41,8 @@ function color_text() {
     fi
 }
 
-for index in $(seq 0 7); do
-    color_text "Test colour functionality" $index
-done
+# for index in $(seq 0 7); do
+#     color_text "Test colour functionality" $index
+# done
 
 bb_output_file_loaded "color" $INSTALLATION_NARRATOR

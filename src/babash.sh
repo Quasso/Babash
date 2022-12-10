@@ -17,23 +17,27 @@ INSTALLATION_NARRATOR=true
 # which could have benefits but also restricts where
 # this can be imported.
 
+source $PWD/src/core/index.sh
+
+source $PWD/src/output/index.sh
+bb_output_file_loaded "Output"
+
 function bb_output_file_loaded() {
     NAME=$1
     SUBMOD=$2
 
     if [[ $INSTALLATION_NARRATOR == true ]]; then
         if [[ $SUBMOD == true ]]; then
-            echo "[babash] The submodule '_${NAME}' loaded successfully."
+            bb_success "[babash] The submodule '_${NAME}' loaded successfully."
         else
-            echo "[babash] The module '${NAME}' loaded successfully."
+            bb_success "[babash] The module '${NAME}' loaded successfully."
         fi
     fi
 }
 
-source $PWD/src/core/index.sh
 bb_output_file_loaded "Core"
 
-source $PWD/src/output/index.sh
-bb_output_file_loaded "Output"
+source $PWD/src/extensions/index.sh
+bb_output_file_loaded "Extensions"
 
 bb_output_file_loaded "babash shell helper"
