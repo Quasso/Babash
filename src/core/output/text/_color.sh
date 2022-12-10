@@ -33,9 +33,9 @@ COLOUR_OPTIONS=(0 1 2 3 4 5 6 7)
 function color_text() {
     TEXT=$1
     COLOR_ID=$2 # 0-7 according to tpu setaf range
-
+    # echo "color text $TEXT"
     if [[ "${COLOUR_OPTIONS[*]}" =~ "${COLOR_ID}" ]]; then
-        echo "$(tput setaf $COLOR_ID)$TEXT${BB_RESET}"
+        export COLOURED_TEXT="$(tput setaf $COLOR_ID)${TEXT}${BB_RESET}"
     else
         echo $TEXT
     fi

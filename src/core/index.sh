@@ -6,14 +6,6 @@
 #
 #
 
-source $PWD/src/core/ascii/_logo.sh
-
-# Main config file, can be edited to change functionality
-source $PWD/src/core/config/_config.sh
-
-# THIS MUST BE SOURCED FIRST, EACH SUBSEQUENT SOURCE MAY USE IT!
-source $PWD/src/core/config/_global-defaults.sh
-
 #
 #
 # END CONFIG
@@ -25,9 +17,6 @@ source $PWD/src/core/config/_global-defaults.sh
 # OUTPUT: utils to help with terminal output/formatting
 #
 #
-
-source $PWD/src/core/output/index.sh
-bb_output_file_loaded "Output"
 
 #
 #
