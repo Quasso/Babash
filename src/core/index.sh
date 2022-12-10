@@ -22,6 +22,21 @@ source $PWD/src/core/config/_global-defaults.sh
 
 #
 #
+# OUTPUT: utils to help with terminal output/formatting
+#
+#
+
+source $PWD/src/core/output/index.sh
+bb_output_file_loaded "Output"
+
+#
+#
+# END OUTPUT
+#
+#
+
+#
+#
 # DEV: utils to help while doing dev work
 #
 #

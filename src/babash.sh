@@ -20,9 +20,6 @@ INSTALLATION_NARRATOR=true
 source $PWD/src/core/index.sh
 bb_output_file_loaded "Core"
 
-source $PWD/src/output/index.sh
-bb_output_file_loaded "Output"
-
 function bb_output_file_loaded() {
     NAME=$1
     SUBMOD=$2
