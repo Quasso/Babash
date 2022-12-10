@@ -29,13 +29,17 @@ BB_COL_CYAN=$(tput setaf 6)
 BB_COL_WHITE=$(tput setaf 7)
 BB_RESET=$(tput sgr0)
 
+COLOUR_OPTIONS=(0 1 2 3 4 5 6 7)
 function color_text() {
     TEXT=$1
     COLOR_ID=$2 # 0-7 according to tpu setaf range
 
-    echo "$(tput setaf $COLOR_ID)$TEXT${BB_RESET}"
+    if [[ "${COLOUR_OPTIONS[*]}" =~ "${COLOR_ID}" ]]; then
+        echo "$(tput setaf $COLOR_ID)$TEXT${BB_RESET}"
+    else
+        echo $TEXT
+    fi
 }
-# echo "${red}red text ${green}green text"
 
 for index in $(seq 0 7); do
     color_text "Test colour functionality" $index

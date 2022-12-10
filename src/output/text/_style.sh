@@ -12,7 +12,7 @@ STYLE_KINDS=('bold' 'dim' 'smul' 'rmul' 'rev' 'smso' 'rmso')
 function style_text() {
     KIND=$1 # one of: bold, dim, smul, rmul, rev, smso, rmso
     TEXT=$2
-    if [[ " ${STYLE_KINDS[*]} " =~ " ${KIND} " ]]; then
+    if [[ "${STYLE_KINDS[*]}" =~ "${KIND}" ]]; then
         # whatever you want to do when array contains value
         echo "$(tput $KIND)$TEXT${BB_RESET}"
     else
