@@ -13,7 +13,9 @@ function bb_output_file_loaded() {
     fi
 }
 
-source $PWD/src/core/ascii/_logo.sh
+if [[ $INSTALLATION_NARRATOR == true ]]; then
+    source $PWD/src/core/ascii/_logo.sh
+fi
 
 source $PWD/src/core/output/index.sh
 bb_output_file_loaded "Output"

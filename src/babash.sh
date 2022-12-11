@@ -1,7 +1,5 @@
 #!/bin/sh
 
-INSTALLATION_NARRATOR=true
-
 #
 #
 #                                           babash
